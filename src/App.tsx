@@ -1,16 +1,18 @@
 import './App.css'
 import Employee from './component/Employee'
-import Student from './component/Student'
 import Badge from './component/Badge/Badge'
+
 function App() {
-  
-  return (
+  const showOrNot = false;
+
+  return showOrNot ?
     <>
-      <div>
-        <Badge></Badge>
-      </div>
+      <Badge></Badge>
     </>
-  )
+    :
+    <>
+      <Employee />
+    </>
 }
 
 export default App
