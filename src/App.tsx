@@ -1,12 +1,10 @@
 import './App.css'
-import Employee from './component/Employee'
-import Badge from './component/Badge/Badge'
-import Friend from './component/Friend/Friend'
+import Badge from './component/BadgeNew/BadgeNew'
 
 function App() {
   return (
     <>
-    <Friend />
+    <Badge />
   </>
   )
 
