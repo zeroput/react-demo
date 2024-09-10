@@ -1,10 +1,10 @@
 import './App.css'
 
-import InputNew from './component/InputNew/InputNew'
+import LightSwitcher from './component/LightSwitcher/LightSwitcher'
 function App() {
   return (
     <>
-    <InputNew/>
+    <LightSwitcher/>
   </>
   )
 
