@@ -1,10 +1,10 @@
 import './App.css'
 
-import LimitedTextInput from './component/LimitedTextInput/LimitedTextInput'
+import PasswordInput from './component/PasswordInput/PasswordInput'
 function App() {
   return (
     <>
-    <LimitedTextInput/>
+    <PasswordInput/>
   </>
   )
 
