@@ -1,10 +1,10 @@
 import './App.css'
-import Badge from './component/BadgeNew/BadgeNew'
 
+import InputNew from './component/InputNew/InputNew'
 function App() {
   return (
     <>
-    <Badge />
+    <InputNew/>
   </>
   )
 
