@@ -1,33 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // use {} expression
+  const myName = 'Hello World';
+  const myNum = 101;
+  let threeExp = true;
+  const PI = 3.1416;
+  let obj = {    
+    "key1": "Tom",
+    "key2": "Jerry",
+    "key3": "Jepson"
+  }
 
+  
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h2>1. string type{myName}</h2>
+        <h2>2. number type: {myNum}</h2>
+        <h2>3. bool type: {threeExp ? 'yes': 'no'}</h2>
+        <h2>4. call the API: get the fixed(2) of this {PI} "==="  {PI.toFixed(2)}</h2>
+        <h2>5. display the obj, {obj.key1}</h2>
+        <h2>5. display the obj, {JSON.stringify(obj)}</h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
