@@ -5,21 +5,15 @@ function LightSwitcher() {
   // use the state hook
   const [mode, setMode] = React.useState("dark");
 
-  const activateDarkMode = () => {
-    setMode("dark")
-  }
-
-  const activateLightMode = () => {
-    setMode("light")
+  const clickEvent = () => {
+    setMode(mode === "dark" ? "light" : "dark")
   }
 
   return (
     <main className={mode}>
-      {mode === "light" ? (
-        <button onClick={activateDarkMode}>Turn off the light</button>
-      ) : (
-        <button onClick={activateLightMode}>Turn on the light please</button>
-      )}
+      <button onClick={clickEvent}>
+        {mode === "dark" ? "1-Turn on the Light" : "2-Turn off the Light"}
+      </button>
     </main>
   );
 }
