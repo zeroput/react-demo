@@ -1,10 +1,10 @@
 import './App.css'
 
-import LightSwitcher from './component/LightSwitcher/LightSwitcher'
+import LimitedTextInput from './component/LimitedTextInput/LimitedTextInput'
 function App() {
   return (
     <>
-    <LightSwitcher/>
+    <LimitedTextInput/>
   </>
   )
 
