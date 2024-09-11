@@ -1,6 +1,6 @@
 import './PasswordInput.css'
 import { useState } from "react";
-
+// the param { minimum = 8 } in function set the default value of the props
 function PasswordInput({ minimum = 8 }) {
 
     const [inputValue, setInputValue] = useState("");
