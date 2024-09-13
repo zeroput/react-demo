@@ -1,14 +1,14 @@
 import './App.css'
 
 import MyClock from './component/MyClock/MyClock'
-import Friend from './component/Friend/Friend'
+import CountryInfo from './component/CountryInfo/CountryInfo'
 function App() {
-  let boolTest = 3;
   return (
     <>
-    {boolTest == 3 && <Friend/>}
-    <MyClock/>
-  </>
+      <MyClock />
+      <CountryInfo />
+
+    </>
   )
 
 }
